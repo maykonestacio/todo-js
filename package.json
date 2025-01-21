@@ -3,7 +3,8 @@
     "sass": "^1.70.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "typescript": "^5.7.3"
   },
   "config": {
     "commitizen": {
@@ -12,6 +13,7 @@
   },
   "scripts": {
     "build": "sass -w src/sass/style.scss:src/public/style/style.css",
-    "docker-compose-build": "docker compose -f docker/docker-compose.yml up -d"
+    "docker-compose-build": "docker compose -f docker/docker-compose.yml up -d",
+    "start:tsc:watch": "npx tsc -w -p ./tsconfig.web.json"
   }
 }
