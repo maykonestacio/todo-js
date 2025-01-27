@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
       "allowJs": true,   
-      "outDir": "./build/"
+      "rootDir": "./src/",
+      "outDir": "./build/public/"
     },
     "extends": "./tsconfig.json",
-    "include": ["./src/public/js"], 
+    // "include": ["./src/public/js"], 
 }
